@@ -10,7 +10,7 @@ describe("Checkboxes code and assertions on it",()=>{
 
 
 describe("Radio button and assertions on it",()=>{
-    it("Checkboxes code and assertions on it",()=>{
+    it("Radio button and assertions on it",()=>{
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.get('input[value="radio3"]').should('not.be.checked')
         cy.get('input[value="radio3"]').click()
@@ -20,7 +20,7 @@ describe("Radio button and assertions on it",()=>{
 })
 
 describe("Validate visibility of element",()=>{
-    it("Checkboxes code and assertions on it",()=>{
+    it("Validate visibility of element",()=>{
         cy.get('#displayed-text').should('be.visible')
         cy.get('#hide-textbox').click()
         cy.wait(3000)
